@@ -93,7 +93,7 @@ Yuck. I don't know what I was thinking. To start cleaning up, I worked on removi
 };
 ```
 
-That's a little better, but I still have an issue with `result`. It's a little gross that it is being mutated in 2 different places, and by the time it returns at the end of the function you kind of forget where `result` came from. We can clean that up though. The function of the 2nd `if` statement is to deal with the edge case where we are removing index `0` from a `SinglyLinkedList` of only one node. In this case, we don't want to do any fancy reassignment of pointers. We just want to grab the node, cache it's value to return, and then clear out the list. Rather than declaring `result` at the top of the function, we can just move it into the relevant `if`.
+That's a little better, but I still have an issue with `result`. It's a little gross that it is mutated in 2 different places, and by the time it returns at the end of the function you forget where `result` came from. We can clean that up though. The function of the 2nd `if` statement is to deal with the edge case where we are removing index `0` from a `SinglyLinkedList` of only one node. In this case, we don't want to do any fancy reassignment of pointers. We just want to grab the node, cache it's value to return, and then clear out the list. Rather than declaring `result` at the top of the function, we can just move it into the relevant `if`.
 
 ```js
 SinglyLinkedList.prototype.remove = function(index) {
