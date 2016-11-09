@@ -153,7 +153,7 @@ Now when you reload the page, the string that you passed to the `Name` component
 
 ## Interactivity with `state`
 
-When we're using Angular 1, our `ng-models` use two-way data-binding to propagate model changes from our code to the view, and from the view back to the code. React breaks this, and uses one-way data-binding. This means that the view is entirely dependent on the model, and that only model updates will be propagated to the view. View updates are _not_ propogated back to the model. This means we need to tell React how aspects of our UI can interact with the app's state and change it. To do this, we use a components *state*.
+When we're using Angular 1, our `ng-models` use two-way data-binding to propagate model changes from our code to the view, and from the view back to the code. React breaks this, and uses one-way data-binding. This means that the view is entirely dependent on the model, and that only model updates will be propagated to the view. View updates are _not_ propagated back to the model. This means we need to tell React how aspects of our UI can interact with the app's data and modify it. To do this, we use a component's *state*.
 
 How this works in practice:
 
