@@ -15,7 +15,7 @@ create-react-app hello-react
 
 This will take a few minutes, but when it's done you should `cd` into the created "hello-react" directory, and then run `npm start`. A browser window should open up and show you something like this:
 
-__!! IMAGE PLACEHOLDER !!__
+![react](../img/hello-react.png)
 
 
 ## Boilerplate
