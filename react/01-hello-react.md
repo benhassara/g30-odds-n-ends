@@ -132,7 +132,7 @@ class App extends Component {
 export default App;
 ```
 
-Notice the difference in how the `Name` component is used now. Rather than simply using `<Name />`, we assign it a prop of `name` by changing it to: `<Name name="Big Bird" />`. We need to make a few more changes in `Name.jsx` in order to make this functionality work.
+Notice the difference in how the `Name` component is used now. Rather than simply using `<Name />`, we assign it a prop of `name` by changing it to: `<Name name="Big Bird" />`. We need to make a change in `Name.jsx` as well in order to make this functionality work.
 
 #### `Name.jsx`
 
