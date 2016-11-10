@@ -83,9 +83,9 @@ class App extends Component {
 export default App;
 ```
 
-This file defines the `App` component, and how it will render onto the page. This looks pretty weird. It's a JavaScript file with some stuff in it that looks like HTML. This syntax is called [JSX](https://facebook.github.io/react/docs/introducing-jsx.html), it compiles to regular JavaScript when we run it through [Babel](http://babeljs.io/), and essentially acts as syntactic sugar for the JavaScript Web API's that we use in the browser to create DOM elements.
+This file defines the `App` component, and how it will render onto the page. Yes, it looks pretty weird. It's a JavaScript file with some stuff in it that sure looks like HTML. Facebook calls this syntax [JSX](https://facebook.github.io/react/docs/introducing-jsx.html), it compiles to regular JavaScript when we run it through [Babel](http://babeljs.io/), and essentially acts as syntactic sugar for the JavaScript Web API's that we use to interact with the DOM.
 
-For example, the first line of the `render` method here creates a div with JSX: `<div className="App">` will create the HTML element: `<div class="App">`. Notice that to set HTML class attributes, in JSX you use `className` rather than `class`. This avoids the conflict between the JavaScript `class` keyword and the DOM attribute. Most of the time, you can use the same attribute name in JSX that you would in HTML. However, there are some exceptions like `class`.
+For example, the first line of the `render` method here creates a div with JSX: `<div className="App">` will create the HTML element: `<div class="App">`. Notice that to set HTML class attributes in JSX you use `className` rather than `class`. This avoids the conflict between the JavaScript `class` keyword and the DOM attribute. Most of the time, you can use the same attribute name in JSX that you would in HTML. However, there are some exceptions like `class`.
 
 
 The rest of the files in the boilerplate are simply assets and styling.
@@ -101,7 +101,7 @@ Let's add another element to the page with React.
 
 ## Passing Data with Props
 
-Now you've got a `Name` component rendering a name to the page, but what if we want the `Name` component to render any name that we pass to it? Right now, we don't have any way to do that, the name is hard-coded. Luckily, we've got [props](https://facebook.github.io/react/docs/components-and-props.html). We can use `props` to pass data from a parent component, down to a child component. Let's modify our `Name` component to render a string based on its props, rather than hard-coding a value.
+Now you've got a `Name` component rendering a name to the page, but what if we want the `Name` component to render any name that we pass to it? Right now, we don't have any way to do that, the name is hard-coded. Luckily, we've got [props](https://facebook.github.io/react/docs/components-and-props.html). We can use props to pass data from a parent component, down to a child component. Let's modify our `Name` component to render a string based on its props, rather than hard-coding a value.
 
 #### `App.js`
 
