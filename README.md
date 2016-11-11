@@ -11,3 +11,4 @@ A miscellaneous collection of things for g30.
 
 ## React
 - [Hello React](./react/01-hello-react.md)
+- [GitHub User Search](./react/02-github-user-search-exercise.md)
